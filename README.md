@@ -10,7 +10,7 @@ Base Mode:
 This page takes two inputs and returns the result of four basic mathematic operations.
 
 - can add, subtract, multiply, and divide some integers!  Holy wow!
-- can clear input and result fields for a fresh experience!  Hold my damn!
+- can clear input and result fields for a fresh experience!  Hold my geez!
 
 Hard Mode:
 ==

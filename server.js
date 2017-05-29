@@ -20,25 +20,27 @@ app.get('/', function(req, res) {
 
 app.post('/num', function(req, res) {
     console.log(req.body);
-    var numToReturn = 0;
+    var numToReturn ={
+        answer: 0
+    };
     var x = Number(req.body.x);
     var y = Number(req.body.y);
     console.log(req.body.x);
     console.log(x);
     switch (req.body.type) {
         case "add":
-            numToReturn = x + y;
+            numToReturn.answer = x + y;
             console.log('add case');
-            console.log(numToReturn);
+            console.log(numToReturn.answer);
             break;
         case "subtract":
-            numToReturn = x - y;
+            numToReturn.answer = x - y;
             break;
         case "multiply":
-            numToReturn = x * y;
+            numToReturn.answer = x * y;
             break;
         case "divide":
-            numToReturn = x / y;
+            numToReturn.answer = x / y;
             break;
     }
     res.send(numToReturn);
