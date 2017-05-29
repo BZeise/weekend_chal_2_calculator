@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <script src="scripts/calculator.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div class="container">
+
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-4">
+              <input type="number" id="input1" placeholder="First number!">
+            </div>
+            <div class="col-xs-4">
+              <input type="number" id="input2" placeholder="Second number!">
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-2">Equals...</div>
+            <div class="col-xs-4"><span id="result">Result Here!</span></div>
+          </div>
+          <div class="row" style="padding: 10px">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-2">
+              <button id="addButton">Plus</button>
+            </div>
+            <div class="col-xs-2">
+              <button id="subtractButton">Minus</button>
+            </div>
+            <div class="col-xs-2">
+              <button id="multiplyButton">Times</button>
+            </div>
+            <div class="col-xs-2">
+              <button id="divideButton">Divided By</button>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6"></div>
+            <div class="col-xs-2">
+              <button id="clearButton">Clear</button>
+            </div>
+          </div>
+
+      <div class="col-xs-2"></div>
+    </div>
+  </body>
+</html>
