@@ -11,43 +11,43 @@ function onReady(){
 
 // declare object to send
 // specifics will be added in each function
-var dataToSend = {
+let dataToSend = {
   x: 0,
   y: 0,
   type: ""
 };// end object
 
-function clearFields() {
+let clearFields = () => {
   $('#input1').val('');
   $('#input2').val('');
   $('#result').text('Result Here!');
-}
+};
 
-function addThem(){
+let addThem = () => {
   console.log('add button clicked');
   dataToSend.type = "add";
   operateThem();
-}// end addThem
+};// end addThem
 
-function subtractThem(){
+let subtractThem = () => {
   console.log('subtract button clicked');
   dataToSend.type = "subtract";
   operateThem();
-}// end subtractThem
+};// end subtractThem
 
-function multiplyThem(){
+let multiplyThem = () => {
   console.log('multiply button clicked');
   dataToSend.type = "multiply";
   operateThem();
-}// end multiplyThem
+};// end multiplyThem
 
-function divideThem(){
+let divideThem = () => {
   console.log('divide button clicked');
   dataToSend.type = "divide";
   operateThem();
-}// end divideThem
+};// end divideThem
 
-function operateThem(){
+let operateThem = () => {
   console.log('operate function ran');
   console.log($('#input1').val(), '<--1 and 2-->', $('#input2').val() );
   dataToSend.x = $('#input1').val();
@@ -62,4 +62,4 @@ function operateThem(){
       $('#result').text(response.answer); // fill in response property
     }
   });// end ajax
-}// end operateThem
+};// end operateThem
